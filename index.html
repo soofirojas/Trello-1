@@ -4,61 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Trello</title>
+  <!--Unión con la hoja de estlos de css-->
   <link rel="stylesheet" href="css/style.css">
+  <!--Uni´n con la hoja de estilos de font awesome para usar iconos de la página-->
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
   <nav>
+    <!--Área de la barra superior de la página-->
     <div class="top-bar">
       <img src="assets/images/trello-logo.png" alt="trello.logo">
+      <!--Este div con tiene las áreas que van a la izquierda de la pantalla principal-->
       <div class="left-buttons">
-        <span class="boards"></span>
-        <span class="lens"></span>
+        <span class="boards"><i class="fa fa-trello" aria-hidden="true"></i>  Tableros</span>
+        <span class="lens"><i class="fa fa-search" aria-hidden="true"></i></span>
       </div>
+      <!--Este div contiene los botonoes que aparecen en el lado derecho de la pantalla-->
       <div class="right-buttons">
-        <span class="plus"></span>
-        <span class="clock"></span>
-        <span class="bell"></span>
-        <span class="photo"></span>
+        <img class="photo" src="assets/images/avatar.jpg" alt="avatar">
+        <span class="bell"><i class="fa fa-bell" aria-hidden="true"></i></span>
+        <span class="clock"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+        <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
       </div>
     </div>
   </nav>
 
+  <!--Área que contiene el titulo de tablero e iconos secundarios-->
+  <div class="title-board">Tablero - Reto de código</div>
+  <span class="star"><i class="fa fa-star-o" aria-hidden="true"></i></span>
+  <span class="lock"><i class="fa fa-lock" aria-hidden="true"></i>Privado</span>
 
+  <!--Sección principal de las listas y tareas-->
 
+  <section id="principal">
+    <section id="formBox" class="inline">
+      <div class="formulario">
 
-<div class="title-board">Tablero - Reto de código</div>
+        <!--Caja para añadir la primera lista-->
 
-    <!--Principal container section-->
-
-    <section id="principal">
-      <section id="formBox" class="inline">
-        <div class="formulario">
-
-          <!--First click box-->
-
-          <div id="boxList" class="addOn">
-            <span id="addList">Añadir una Lista...</span>
-          </div>
-
-          <!--Input will be enabled till the first click-->
-
-          <div id="container" class="listOff">
-            <div>
-              <input type="text" id="list" placeholder="Añadir una lista...">
-            </div>
-            <div>
-              <button id="button"class="boton" type="button" >Guardar</button>
-            </div>
-          </div>
+        <div id="boxList" class="addOn">
+          <span id="addList">Añadir una Lista...</span>
         </div>
 
-      </section>
+        <!--Input que aparecerá para introducir las listas-->
+
+        <div id="container" class="listOff">
+          <div>
+            <input type="text" id="list" placeholder="Añadir una lista...">
+          </div>
+          <div>
+            <!--Botón ára guardar cambios en las listas creadas-->
+            <button id="button" class="boton" type="button">Guardar</button>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
+  </section>
+  <!--Unión de html con js-->
   <script type="text/javascript" src="js/app.js"></script>
 
 </body>
