@@ -1,110 +1,168 @@
+/*estilo que se aplicará al body*/
 body {
+	background-color: #1D8DC2;
+	font-family: sans-serif;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #1D8DC2;
+}
+/*estilo de las imagenes*/
+img {
+	display: inline-block;
+  margin-top: 8px;
+  width: 8%;
 }
 
-#button{
-	background: #519839
+#button,
+.btnn{
+	background: #519839;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
+
 #list {
-	width: 190px;
-	margin-top: 2px;
-	margin-left: 2px;
-	border-radius: 3px;
 	background: #eee;
-	padding-bottom: 10px;
+	border-radius: 3px;
 	font-size: 16px;
+	margin-left: 2px;
+	margin-top: 2px;
+	padding-bottom: 10px;
+	width: 190px;
 }
 
-/*Active add List*/
+/*Estilo de la lista cuando se active*/
 .addOn{
 		background:  #147AA7;
-		display: block;
-		padding: 5px;
+		color:#fff;
 		cursor: pointer;
+		display: block;
+		font-size: 16px;
+		height: 30px;
+		margin-left: 10px;
+		padding: 10px;
     width: 200px;
-    height: 30px;
-    margin-left: 10px;
-    color:#fff;
-	  font-size: 16px;
 }
 
-/*Disabled add List*/
+/*Lista desactivada*/
 .addOff{
+	  background: #C6567E;
+	  color:#fff;
+		display:none;
+		font-size: 16px;
+		height: 30px;
+		margin-left: 10px;
     width: 200px;
-    height: 30px;
-    margin-left: 10px;
-    color:#fff;
-	  font-size: 16px;
-    background: #C6567E;
-    display:none;
 }
 
-
+/* Estilo de área de texto*/
 .areaText {
-	margin-left: 10px;
-	margin-top: 5px;
 	display: block;
 	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 5px;
 }
 
+/*botón de tableros e icono de trello*/
+.boards {
+  background: #66A3C1;
+	border-radius: 8px;
+	color: white;
+  float: left;
+  height: 30px;
+  width: 120px;
+}
+
+/*botón para añadir tareas*/
 .bttn {
-	margin-left: 10px;
-	margin-top: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	color:#fff;
 	background-color:#519839;
+	color:#fff;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top:  5px;
+	margin-bottom: 5px;
 }
 
-/*disabled button*/
+/*botón desactivado*/
 .buttonOff {
+	background-color:#A5E0FC;
+	color:#fff;
+	display: none;
 	margin-left: 10px;
 	margin-top: 5px;
-	padding-top: 5px;
 	padding-bottom: 5px;
-	color:#fff;
-	background-color:#A5E0FC;
-	display: none;
+	padding-top: 5px;
 }
 
 .contenedor {
 	font-size: 14px;
 }
 
+/*iconos de font awesome usados*/
+.fa.fa-search{
+	margin-left: 150px;
+}
+
+.fa.fa-star-o,
+.fa.fa-lock,
+.lock{
+	color: white;
+	margin: 7px;
+}
+
+.fa.fa-trello,
+.fa.fa-bell,
+.fa.fa-info-circle,
+.fa.fa-search,
+.fa.fa-plus{
+	margin-top: 7px;
+	color: white;
+}
 
 .inline {
 	display: inline-block;
 	float: left;
 }
 
-/*Active List*/
+/*botones del lado izquierdo*/
+.left-buttons{
+  float: left;
+  left: 20px;
+  margin-top: 10px;
+}
+/*area de buscador*/
+.lens {
+  background: #66A3C1;
+  border-radius: 8px;
+	float: left;
+  height: 30px;
+	margin-left: 7px;
+  width: 180px;
+}
+/*texto de añadir una trjeta*/
+.link {
+	background: #C4C9CC;
+	font-size: 16px;
+	margin: 4px;
+	padding: 4px;
+	width: 92%;
+}
+
+/*Lista activa*/
 .listOn {
 	background: #ddd;
-	width: 200px;
-
 	margin-left: 10px;
 	overflow: hidden;
+	width: 200px;
 }
 
-/*Disabled List*/
+/*Lista desctivada*/
 .listOff {
 	background: #ddd;
-	width: 200px;
-
-	margin-left: 10px;
 	display: none;
+	margin-left: 10px;
 	overflow: hidden;
-}
-
-/*Disabled text area*/
-.textAreaOff {
-	margin-left: 10px;
-	margin-top: 5px;
-	font-family: arial;
-	font-size: 14px;
-	display: none;
+	width: 200px;
 }
 
 /*tajertas ocultas*/
@@ -114,75 +172,50 @@ body {
 	font-size: 16px;
 }
 
-.link {
-	padding: 4px;
-	margin: 4px;
-	width: 92%;
-	font-size: 16px;
-	background: #C4C9CC;
+/*foto de perfil*/
+.photo {
+  border-radius: 50%;
 }
 
-.top-bar {
-  background: #147AA7;
-  height: 50px;
-  text-align: center;
-}
-
-img {
-  width: 8%;
-  display: inline-block;
-  margin-top: 8px;
-}
-
-.left-buttons{
-  position: absolute;
-  left: 20px;
-  top: 10px;
-
-}
-
-.boards {
-  background: #66A3C1;
-  border-radius: 8px;
-  display: inline-block;
-  height: 30px;
-  width: 120px;
-}
-
-.lens {
-  background: #66A3C1;
-  border-radius: 8px;
-  display: inline-block;
-  height: 30px;
-  width: 180px;
-  margin-left: 7px;
-}
-
-.right-buttons {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
-
+/*iconos del lado derecho de pantalla*/
 .plus,
 .clock,
 .bell,
 .photo {
   background: #66A3C1;
   border-radius: 8px;
-  display: inline-block;
-  height: 30px;
+	float: right;
+	height: 30px;
+	margin: 3px;
   width: 30px;
 }
 
-.photo {
-  border-radius: 50%;
+/*botones dle lado derecho de la pantalla*/
+.right-buttons {
+  float: right;
+  right: 20px;
+  top: 10px;
 }
 
+/*Area de text desactivada*/
+.textAreaOff {
+	display: none;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+/*texto de reto de código*/
 .title-board {
   color: #fff;
   display: inline-block;
   font-weight: bold;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin:15px 20px;
+}
+
+/*barra superior*/
+.top-bar {
+  background: #147AA7;
+  height: 50px;
+  text-align: center;
 }
